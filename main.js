@@ -44,5 +44,4 @@ if(message.content === prefix + "infodiscord")
        .addField("Utilisateur sur le discord", message.guild.memberCount)
        .setColor("0x0000FF")
     message.channel.sendEmbed(embed)
-}
          })
