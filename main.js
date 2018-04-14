@@ -35,7 +35,7 @@ bot.on('message', message => {
     }
         })
 
-   if(message.content === prefix + "infodiscord")
+if(message.content === prefix + "infodiscord")
        var embed = new Discord.RichEmbed()
        .setDescription("Information du Discord")
        .addField("Nom du discord", message.guild.name)
@@ -44,5 +44,4 @@ bot.on('message', message => {
        .addField("Utilisateur sur le discord", message.guild.memberCount)
        .setColor("0x0000FF")
     message.channel.sendEmbed(embed)
-
-    }
+         })
