@@ -10,25 +10,26 @@ bot.user.setActivity("/help | ThomBot")
 });
 
 bot.login(process.env.TOKEN)
+
+// Informations sur les commandes //
 bot.on('message', message => {
   if (message.content === '/help') {
-    message.reply('Les commandes : /info-bot thombot , thombot facebook , thombot Emmanuel,thombot la table de 1 jusque 10 ')
+    message.reply('Les commandes : /info-bot testbot type , testbot facebook , testbot Emmanuel, testbot Récite-moi la table de 1 jusque 10')
   }
-
-  if (message.content === '/info-bot thombot') {
+  
+  if (message.content === '/info-bot testbot type') {
     message.reply('Ce type de BOT est un bot privée.')
   }
-
-  if (message.content === 'thombot facebook') {
+    
+  if (message.content === 'testbot facebook') {
     message.chanel.end('Facebook est un réseau social.')
   }
-
-    if (message.content === 'thombot Emmanuel') {
+  
+    if (message.content === 'testbot Emmanuel') {
     message.chanel.end('Emmanuel est une personne qui ma aidé beaucoup')
     }
-
-          if (message.content === 'thombot la table de 1 jusque 10') {
+      
+          if (message.content === 'OK Maze Récite-moi la table de 1 jusque 10') {
         message.channel.send('Goooo! \n 1x1=1\n1x2=2\n1x3=3\n1x4=4\n1x5=5\n1x6=6\n1x7=7\n1x8=8\n1x9=9\n1x10=10')
     }
-
-  )}
+        })
