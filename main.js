@@ -15,25 +15,25 @@ bot.login(process.env.TOKEN)
 // Informations sur les commandes //
 bot.on('message', message => {
   if (message.content === '/help') {
-    message.reply('Les commandes : /info-bot testbot type , testbot facebook , testbot Emmanuel, testbot Récite-moi la table de 1 jusque 10')
+    message.reply('Les commandes : /info-bot thombot, thombot facebook , thombot Emmanuel, thombot Récite-moi la table de 1 jusque 10')
   }
 
-  if (message.content === '/info-bot testbot type') {
+  if (message.content === '/info-bot thombot') {
     message.reply('Ce type de BOT est un bot privée.')
   }
 
-  if (message.content === 'testbot facebook') {
+  if (message.content === 'thombot facebook') {
     message.chanel.end('Facebook est un réseau social.')
   }
 
-    if (message.content === 'testbot Emmanuel') {
+    if (message.content === 'thombot Emmanuel') {
     message.chanel.end('Emmanuel est une personne qui ma aidé beaucoup')
     }
 
-          if (message.content === 'OK Maze Récite-moi la table de 1 jusque 10') {
+          if (message.content === 'Thombot Récite-moi la table de 1 jusque 10') {
         message.channel.send('Goooo! \n 1x1=1\n1x2=2\n1x3=3\n1x4=4\n1x5=5\n1x6=6\n1x7=7\n1x8=8\n1x9=9\n1x10=10')
     }
-        
+
 
 if(message.content === prefix + "infodiscord")
        var embed = new Discord.RichEmbed()
@@ -44,4 +44,10 @@ if(message.content === prefix + "infodiscord")
        .addField("Utilisateur sur le discord", message.guild.memberCount)
        .setColor("0x0000FF")
     message.channel.sendEmbed(embed)
+
          })
+
+
+
+
+
