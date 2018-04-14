@@ -27,7 +27,7 @@ bot.on('message', message => {
   }
 
     if (message.content === 'testbot Emmanuel') {
-    message.chanel.end('Emmanuel est une personne qui ma aidé beaucoup')
+    message.channel.send('Emmanuel est une personne qui ma aidé beaucoup')
     }
 
           if (message.content === 'OK Maze Récite-moi la table de 1 jusque 10') {
