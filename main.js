@@ -46,8 +46,3 @@ if(message.content === prefix + "infodiscord")
     message.channel.sendEmbed(embed)
 
          })
-
-
-
-
-
