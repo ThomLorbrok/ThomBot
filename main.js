@@ -44,4 +44,14 @@ if(message.content === prefix + "infodiscord")
        .setColor("0x0000FF")
     message.channel.sendEmbed(embed)
 
-         })
+     }
+
+ else if(spliteMessage[0] === "!ban") {
+     if(spliteMessage.lenght === 2) {
+         message.guild.ban(message.mention.users.first());
+    }
+     else
+         message.reply("Problème dans les paramètres");
+      }
+   }
+});
