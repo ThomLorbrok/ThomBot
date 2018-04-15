@@ -54,5 +54,4 @@ if(message.content === prefix + "clear"){
                         message.channel.bulkDelete(list);
                     }, function(err){message.channel.send("Erreur")})}
                     console.log("La commande clear viens d'être effectué par un membre de l'équipe.")
-    }
-    }
+}
