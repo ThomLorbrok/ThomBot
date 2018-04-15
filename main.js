@@ -55,3 +55,5 @@ if(message.content === prefix + "clear"){
                     }, function(err){message.channel.send("Erreur")})}
                     console.log("La commande clear viens d'être effectué par un membre de l'équipe.")
 }
+
+}
