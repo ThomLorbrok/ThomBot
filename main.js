@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-var prefix = ("/");
+var prefix = ("!");
 
 bot.on('ready', function () {
   console.log("Bot démarré")
@@ -44,4 +44,14 @@ if(message.content === prefix + "infodiscord")
        .setColor("0x0000FF")
     message.channel.sendEmbed(embed)
 
-         })
+          })
+
+
+if(message.content === prefix + "clear"){
+            if (message.member.hasPermission("MANAGE_MESSAGES")){
+                message.channel.fetchMessages()
+                    .then(function(list){
+                        message.channel.bulkDelete(list);
+                    }, function(err){message.channel.send("Erreur")})}
+                    console.log("La commande clear viens d'être effectué par un membre de l'équipe.")
+    }
