@@ -56,4 +56,4 @@ if(message.content === prefix + "clear"){
                     console.log("La commande clear viens d'être effectué par un membre de l'équipe.")
 }
 
-}
+})
